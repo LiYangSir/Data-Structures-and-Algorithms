@@ -26,7 +26,7 @@
 
 ### 各数据结构详细内容链接
 
- + 自定义数组 : [Array/README.md](Array/README.md)
+ + 自定义数组 : [Array](Array)
 
  + 栈：[Stack/README.md](Stack/README.md)
 

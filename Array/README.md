@@ -1,4 +1,6 @@
-# Array动态数组
+<h1 align="center">Array动态数组</h1>
+
+-----
 
 ## 1、Array概述
 

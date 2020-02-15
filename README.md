@@ -28,33 +28,33 @@
 
  + 自定义数组 : [Array](Array)
 
- + 栈：[Stack/README.md](Stack/README.md)
+ + 栈：[Stack/README.md](Stack)
 
- + 队列：[Queue/README.md](Queue/README.md)
+ + 队列：[Queue/README.md](Queue)
 
- + 链表：[LinkedList/README.md](LinkedList/README.md)
+ + 链表：[LinkedList/README.md](LinkedList)
 
- + 二分搜索树：[BST/README.md](BST/README.md)
+ + 二分搜索树：[BST/README.md](BST)
 
- + 集合：[Set/README.md](Set/README.md)
+ + 集合：[Set/README.md](Set)
 
- + 映射：[Map/README.md](Map/README.md)
+ + 映射：[Map/README.md](Map)
 
- + 最大堆[MaxHeap/README.md](MaxHeap/README.md)
+ + 最大堆[MaxHeap/README.md](MaxHeap)
 
- + 优先队列：[MaxHeap/README.md](MaxHeap/README.md)
+ + 优先队列：[MaxHeap/README.md](MaxHeap)
 
- + 线段树：[SegmentTree/README.md](SegmentTree/README.md)
+ + 线段树：[SegmentTree/README.md](SegmentTree)
 
- + Trie 字典树：[Trie/README.md](Trie/README.md)
+ + Trie 字典树：[Trie/README.md](Trie)
 
- + 并查集：[UnionFind/README.md](UnionFind/README.md)
+ + 并查集：[UnionFind/README.md](UnionFind)
 
- + AVL 树：[AVLTree/README.md](AVLTree/README.md)
+ + AVL 树：[AVLTree/README.md](AVLTree)
 
- + 红黑树：[RedBlackTree/README.md](RedBlackTree/README.md)
+ + 红黑树：[RedBlackTree/README.md](RedBlackTree)
 
- + 哈希表：[HashTable/README.md](HashTable/README.md)
+ + 哈希表：[HashTable/README.md](HashTable)
 
 
 ### 捐赠

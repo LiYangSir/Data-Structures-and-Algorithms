@@ -5,14 +5,14 @@
 &emsp;&emsp;同数组不用，数组的大小在定义时已经确定，而在实际过程中数组需要根据数据量的大小自动更改数组大小。底层实现仍是数组，只是将数组进行封装，可以实现自适应的数组Array。
 **涉及的所有函数方法：**
 
-<center>
-<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E7%BB%84.png" width = "60%"/></center>
+<div align="center">
+<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%95%B0%E7%BB%84.png" width = "60%"/></div>
 
 ## 2、Array数组实现思路
 
 &emsp;&emsp;数组无非涉及增、查、改、删四种操作，查和改操作与平常数组操作相同。**难点**就在于增加元素和删除元素上。对于一般数组当索引index + 1 超过数组大小是就会报错。为了可以根据数据大小改变数组大小，引入capacity（容器）的概念。其中capacity >= size。如图
-
-<center><img alt= "自定义数组" src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E5%88%9D%E5%A7%8B%E5%8C%96.png" div width="90%"/></center>
+<div align=center>
+<img alt= "自定义数组" src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E5%88%9D%E5%A7%8B%E5%8C%96.png" width="90%"/></div>
 
 **注：** 实际上capacity才是真正数组的大小，size只是capacity中存储数据的多少。
 下面分别说一下增删改查的的实现思路

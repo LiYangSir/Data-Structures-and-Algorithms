@@ -20,13 +20,13 @@
 
 ### 开始使用
 
-&emsp;&emsp;本文主要包含自定义数组(Array)、 栈(Stack)、 队列(Queue)、 优先队列(PriorityQueue)、 链表(LinkedList)、 二分搜索树(BST)、集合(Set)、映射(Map)、  最大堆(MaxHeap)、 线段树(SegmentTree)、字典树(Trie)、 并查集(UnionFind)、 AVL树、 红黑树(RedBlackTree)、 哈希表(HashTable)等以上数据结构。 
+&emsp;&emsp;本文主要包含动态数组(Array)、 栈(Stack)、 队列(Queue)、 优先队列(PriorityQueue)、 链表(LinkedList)、 二分搜索树(BST)、集合(Set)、映射(Map)、  最大堆(MaxHeap)、 线段树(SegmentTree)、字典树(Trie)、 并查集(UnionFind)、 AVL树、 红黑树(RedBlackTree)、 哈希表(HashTable)等以上数据结构。 
 
 &emsp;&emsp;由于文章内容有限，所以每个结构的详细内容分开编写，下面给出了每个数据结构的链接，具体的说明文件在每个结构的文件夹内部的README.md文件中。
 
 ### 各数据结构详细内容链接
 
- + 自定义数组 : [Array](Array)
+ + 动态数组 : [Array](Array)
 
  + 栈：[Stack/README.md](Stack)
 

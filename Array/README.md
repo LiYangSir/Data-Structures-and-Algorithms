@@ -1,8 +1,9 @@
 # Array动态数组
-[TOC]
+
 ## 1、Array概述
 
 &emsp;&emsp;同数组不用，数组的大小在定义时已经确定，而在实际过程中数组需要根据数据量的大小自动更改数组大小。底层实现仍是数组，只是将数组进行封装，可以实现自适应的数组Array。
+
 **涉及的所有函数方法：**
 
 <div align="center">
@@ -35,6 +36,7 @@
 
 &emsp;&emsp;扩容的方式就是开辟一块原capacity的大小2倍的空间，然后将原数组的数据拷贝到新开辟的数组当中。
 在头部和尾部增加元素对应 index = 0 和 index = size - 1
+
 **程序实现：**
 ```java
 public void add(int index, E e) {
@@ -56,6 +58,7 @@ private void resize(int newCapacity) {
     data = newData;
 }
 ```
+
 ### 2.2、删除元素
 &emsp;&emsp;增加元素对应扩容，那么删除元素对应缩容，当删除元素后 size < capacity / 2的时候进行缩容。否则直接让对应位置等于 null 即可。
 **下面以删除索引为1的元素为例 ：** 主要分为有无缩容的请况

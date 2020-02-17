@@ -1,4 +1,9 @@
 <h1 align="center">Array动态数组</h1>
+<div align="center">
+<image src="https://img.shields.io/badge/Github源码地址-LiYangSir-brightgreen" onclick="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Array">
+<image src="https://img.shields.io/badge/author-teaUrn-green">
+<image src="https://img.shields.io/badge/Language-Java-orange">
+</div>
 
 -----
 
@@ -20,7 +25,7 @@
 **注：** 实际上capacity才是真正数组的大小，size只是capacity中存储数据的多少。
 下面分别说一下增删改查的的实现思路
 
-### 2.1、增
+### 2.1、增加元素
 &emsp;&emsp;如果增加后 size <= capacity 则直接将数据添加到数组中，如果增加后 size > capacity 则需要对数组进行扩容操作。扩容的方式也就是扩大为原来的2倍。
 
 **下面以在索引index=2，元素未5为例：** 主要分为有无扩容的请况

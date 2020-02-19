@@ -50,7 +50,7 @@ public boolean isEmpty() {
 }
 ```
 #### 2.3 进出栈操作
-&emsp;&emsp;进栈操作主要是围绕**先进后出，后进先出**的原则，即向数组后添加元素和在数组后取出元素。之所以在数组后取出元素，在[Array动态数组](/Array/README.md)这一片文章中的时间复杂度分析得出，向数组后添加和取出元素都是O(1)级别的复杂度。所将数组末尾作为栈顶。
+&emsp;&emsp;进栈操作主要是围绕**先进后出，后进先出**的原则，即向数组后添加元素和在数组后取出元素。之所以在数组后取出元素，在[Array动态数组](/Array/README.md)这一片文章中的时间复杂度分析得出，向数组后添加和取出元素都是O(1)级别的复杂度。所将**数组末尾作为栈顶**。
 
 ```java
 @Override
@@ -95,7 +95,7 @@ public boolean isEmpty() {
 
 #### 3.2 进出栈操作
 
-&emsp;&emsp;进出栈操作和数组实现就不一样啦。虽然表面上看上去相同，实则不同。Array数组最好使用向数组末尾添加元素来降低复杂度。对于链表来说，向头部或者尾部添加和删除元素的时间复杂度相同，所以向头部或者尾部操作时间复杂度是相同的，都是O(1)级别的。链表头或者尾**都**可以作为栈顶。
+&emsp;&emsp;进出栈操作和数组实现就不一样啦。虽然表面上看上去相同，实则不同。Array数组最好使用向数组末尾添加元素来降低复杂度。对于单链表来说，向头部进行所有操作的时间复杂度相同，都是O(1)级别的。但是向链尾进行的操作就是O(N)级别。所以一般都是**以链表头作为栈顶**。
 
 ```java
 @Override
@@ -107,33 +107,18 @@ public void push(E e) {
 public E pop() {
     return list.removeFirst();
 }
-/**    或者    **/
-// @Override
-// public void push(E e) {
-//     list.addLast(e);
-// }
-
-// @Override
-// public E pop() {
-//     return list.removeLast();
-// }
 
 ```
 
 #### 3.3、查询操作
 
-&emsp;&emsp;查询操作和数组实现相同，但是链表实现的既可以以链表头作为栈顶，也可以使用链表末尾作为栈顶。
+&emsp;&emsp;查询操作和数组实现相同，但是链表实现的一般以链表头作为栈顶。
 
 ```java
 @Override
 public E peek() {
-    return list.getLast();
+    return list.getFirst();
 }
-/**    或者    **/
-// @Override
-// public E peek() {
-//     return list.getFirst();
-// }
 ```
 
 ### 4、时间复杂度分析

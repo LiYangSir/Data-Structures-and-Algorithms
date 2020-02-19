@@ -1,6 +1,6 @@
-<h1 align="center">Stack 栈</h1>
+<h1 align=center><a href="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Array" target="_blank">Stack 栈</a></h1>
 <div align="center">
-<image src="https://img.shields.io/badge/Github源码地址-LiYangSir-brightgreen" onclick="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Stack">
+<image src="https://img.shields.io/badge/Github-LiYangSir-brightgreen">
 <image src="https://img.shields.io/badge/author-teaUrn-green">
 <image src="https://img.shields.io/badge/Language-Java-orange">
 </div>
@@ -182,6 +182,11 @@ public boolean isValid(String s) {
         return stack.isEmpty();
     }
 ```
+
+更多精彩内容，大家可以转到我的主页：[主页](http://quguaiquguai.cn:8090/)
+或者关注我的微信公众号：**TeaUrn**
+或者扫描下方二维码进行关注。
+<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width=50%>
 
 
 

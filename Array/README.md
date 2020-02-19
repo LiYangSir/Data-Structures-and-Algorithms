@@ -1,6 +1,6 @@
-<h1 align="center">Array动态数组</h1>
+<a href="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Array" target="_blank"><h1 align=center>Array 动态数组</h1></a>
 <div align="center">
-<image src="https://img.shields.io/badge/Github源码地址-LiYangSir-brightgreen" onclick="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Array">
+<image src="https://img.shields.io/badge/Github源码-点击题目-brightgreen">
 <image src="https://img.shields.io/badge/author-teaUrn-green">
 <image src="https://img.shields.io/badge/Language-Java-orange">
 </div>

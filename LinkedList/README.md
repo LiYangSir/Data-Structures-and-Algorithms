@@ -1,4 +1,12 @@
-# 链表的实现
+<h1 align=center><a href="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Array" target="_blank"> LinkedList 链表</a></h1>
+<div align="center">
+<image src="https://img.shields.io/badge/Github-LiYangSir-brightgreen">
+<image src="https://img.shields.io/badge/author-teaUrn-green">
+<image src="https://img.shields.io/badge/Language-Java-orange">
+<image src="https://img.shields.io/badge/version-1.0-blue">
+</div>
+
+---------
 
 ## 1、什么是链表
 

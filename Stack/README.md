@@ -11,13 +11,13 @@
 
 &emsp;&emsp;栈这个数据结构有着自己的性质，也就是 **先进后出，后进先出** 的结构。最经典的就是调用函数这一块。不断向栈中加入缓存，最后执行完的函数会回调用放在栈顶的缓存。和它类似的就是队列的数据结构。队列有着**先进先出，后进后出**的结构。两者应用不同的场景。
 <div align="center">
-<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Stack%E6%A0%88/%E6%A0%88%E7%9A%84%E6%A6%82%E5%BF%B5.png" width = "40%"/></div>
+<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Stack%E6%A0%88/%E6%A0%88%E7%9A%84%E6%A6%82%E5%BF%B5.png" width = "30%"/></div>
 &emsp;&emsp;这里将栈设计为Java接口，目的是实现栈的底层有很多。例如数组、链表、二叉树等等。他们都将调用这个Stack接口。
 
 **涉及的函数方法：**
 
 <div align="center">
-<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Stack%E6%A0%88/%E6%A6%82%E5%BF%B5%E6%80%9D%E7%BB%B4%E5%9B%BE.png" width = "80%"/></div>
+<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Stack%E6%A0%88/%E6%A6%82%E5%BF%B5%E6%80%9D%E7%BB%B4%E5%9B%BE.png" width = "70%"/></div>
 涉及的函数不多，所以实现起来也会比较简单。
 
 ### 2、Stack栈的实现——基于动态数组
@@ -186,7 +186,7 @@ public boolean isValid(String s) {
 更多精彩内容，大家可以转到我的主页：[主页](http://quguaiquguai.cn:8090/)
 或者关注我的微信公众号：**TeaUrn**
 或者扫描下方二维码进行关注。
-<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width=50%>
+<img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width=40%>
 
 
 

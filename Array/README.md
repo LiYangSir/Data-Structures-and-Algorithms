@@ -1,4 +1,5 @@
 <a href="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Array" target="_blank"><h1 align=center>Array 动态数组</h1></a>
+
 <div align="center">
 <image src="https://img.shields.io/badge/Github源码-点击题目-brightgreen">
 <image src="https://img.shields.io/badge/author-teaUrn-green">
@@ -34,13 +35,11 @@
 1. 复制元素向后移动
 2. 插入元素到索引位置 
 <div align=center><img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E5%A2%9E%E5%8A%A0-%E6%9C%AA%E6%89%A9%E5%AE%B9.png" width="98%" div alt="增加元素-未扩容"></div>
-
 **2）增加元素-扩容：**
 1. 扩容为原来的2倍，将原数据复制到新数组
 2. 将索引之后的元素向后移一位
 3. 插入元素
 <div align=center><img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E5%A2%9E%E5%8A%A0-%E6%89%A9%E5%AE%B9.png" width="95%" div alt="增加元素-未扩容"></div>
-
 &emsp;&emsp;扩容的方式就是开辟一块原capacity的大小2倍的空间，然后将原数组的数据拷贝到新开辟的数组当中。
 在头部和尾部增加元素对应 index = 0 和 index = size - 1
 
@@ -74,14 +73,12 @@ private void resize(int newCapacity) {
 2. 删除数据中最后一位的元素，索引为size(删除后size已经减 1)
 
 <div align=center><img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E5%88%A0%E9%99%A4-%E6%9C%AA%E6%89%A9%E5%AE%B9.png" width="100%" div alt="删除元素-未缩容"></div>
-
 **2）删除元素-缩容的情况 ：**
 1. 将要删除元素后面的数据向前移一位
 2. 删除数据中最后一位的元素，索引为size(删除后size已经减 1)
 3. 进行缩容，将原数据复制到原数组大小一半的新数组中
-   
+  
 <div align=center><img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E5%88%A0%E9%99%A4-%E7%BC%A9%E5%AE%B9.png" width="70%" div alt="删除元素-缩容"></div>
-
 **程序实现 ：**
 ```java
 public E remove(int index) {
@@ -101,7 +98,6 @@ public E remove(int index) {
 改变元素不涉及扩容或者缩容，没有特别的地方，直接修改即可。
 **下面以set(2, 5)为例 ：**
 <div align=center><img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Array%E6%95%B0%E7%BB%84/%E6%94%B9.png" width="65%" div alt="改变元素"></div>
-
 **代码实现：**
 ```java
 void set(int index, E e) {
@@ -140,6 +136,7 @@ public int find(E e) {
 **1）增加元素的复杂度**
 &emsp;&emsp;最好的情况是向最后的位置添加元素复杂度为 O(1) ，最坏的情况是向头添加元素，因为需要数据整体向后移动,复杂度为 O(N) ，根据均摊复杂度得出复杂度为 O(N/2) = O(N)，也就是说增加元素的复杂度为 O(N)。但是这仅仅是考虑没有扩容的情况产生。但是对于扩容的也是遍历一边数组进行复制的操作，所以复杂度也为 O(N)。
 综上所述增加操作的时间复杂度为 O(N)
+
 |方法|复杂度|
 |:---:|:---:|
 |addFirst(e)|O(1)|
@@ -149,6 +146,7 @@ public int find(E e) {
 
 **2）删除元素的复杂度**
 &emsp;&emsp;删除元素的时间复杂度同增加元素完全相同。一个扩容一个缩容，实现机理相似。也就是说删除操作的时间复杂度也是 O(N) 级别。
+
 |方法|复杂度|
 |:---:|:---:|
 |removeFirst()|O(1)|
@@ -219,3 +217,9 @@ toString()   //打印函数
 ```java
 resize()  //重新定义数组大小
 ```
+
+## 最后
+更多精彩内容欢迎大家关注我的微信公众号：**TeaUrn**
+如果有**问题**或者**疑问**可以私信我或者微信上私信我。
+也欢迎大家来我的**主页**: [曲怪曲怪](http://quguaiquguai.cn:8090/) 
+我在这里等你哦~~

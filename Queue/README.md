@@ -262,7 +262,11 @@ public E getFront() {
 
 ## 最后
 更多精彩内容，大家可以转到我的主页：[曲怪曲怪的主页](http://quguaiquguai.cn:8090/)
+
 或者关注我的微信公众号：**TeaUrn**
+
 或者扫描下方二维码进行关注。里面有惊喜等你哦。
+
 源码地址：可在公众号内回复 **数据结构与算法源码** 即可获得。
+
 <img src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg" width=40%>

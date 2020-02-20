@@ -105,7 +105,7 @@ public void add(int index, E e) {
 2. pre节点指向pre节点的下一节点的下一个节点
 3. 断开待删除节点与其下一个节点的连接，删除的节点会被内存管理机制自动销毁
 
-<div align=center>
+<div align=centeKr>
 <img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/LinkedList/%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0.png width=70%>
 </div>
 和添加元素相同，我们需要先找到待删除位置的前一个位置，所以依然以虚拟头节点作为起始节点。

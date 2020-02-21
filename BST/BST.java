@@ -134,7 +134,6 @@ public class BST<E extends Comparable> {
             if (cur.right != null)
                 q.add(cur.right);
         }
-
     }
 
     public void removeMinimum() {

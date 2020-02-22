@@ -199,7 +199,7 @@ public class BST<E extends Comparable> {
             }
             Node successor = minimum(node.right);
             successor.right = removeMinimum(node.right);
-            successor.right = node.left;
+            successor.left = node.left;
             size++;
             node.left = node.right = null;
             size--;

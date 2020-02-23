@@ -25,6 +25,7 @@
 
 &emsp;&emsp;具体的函数方法依然是增删改查四个操作。这里可以并没有改操作，由于我们并不涉及索引概念，所以就没有改操作。
 **接口函数实现：**
+
 ```java
 public interface Set<E> {
     void add(E e);
@@ -51,7 +52,7 @@ public boolean isEmpty() {
     return linkedList.isEmpty();
 }
 ```
-### 2.2、增加元素
+### 2.3、增加元素
 
 **程序实现：**
 ```java
@@ -62,7 +63,7 @@ public void add(E e) {
 }
 ```
 
-### 2.3、删除元素
+### 2.4、删除元素
 
 **程序实现：**
 ```java
@@ -72,7 +73,7 @@ public void remove(E e) {
 }
 ```
 
-### 2.4、查询元素
+### 2.5、查询元素
 
 **程序实现：**
 ```java

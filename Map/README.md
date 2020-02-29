@@ -195,8 +195,6 @@ private Node add(Node node, K key, V value) {
 
 ## 最后
 
-总的来说集合这种数据结构相对来说比较简单。
-
 更多精彩内容，大家可以转到我的主页：[曲怪曲怪的主页](http://quguai.net:8090/)
 
 或者关注我的微信公众号：**TeaUrn**

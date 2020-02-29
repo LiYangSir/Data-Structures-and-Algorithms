@@ -19,7 +19,6 @@ public class UnionFind_v4 implements UF{
             parent[i] = i;
             rank[i] = 1;
         }
-
     }
 
     private int findParent(int id) {

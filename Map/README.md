@@ -195,7 +195,7 @@ private Node add(Node node, K key, V value) {
 
 ## 最后
 
-更多精彩内容，大家可以转到我的主页：[曲怪曲怪的主页](http://quguai.net:8090/)
+更多精彩内容，大家可以转到我的主页：[曲怪曲怪的主页](http://quguai.cn:8090/)
 
 或者关注我的微信公众号：**TeaUrn**
 

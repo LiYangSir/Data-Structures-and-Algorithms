@@ -1,4 +1,5 @@
-<h1 align=center><a href="https://github.com/LiYangSir/Data-Structures-and-Algorithms/tree/master/Array" target="_blank">Stack 栈</a></h1>
+<h1 align=center>Stack 栈</h1>
+
 <div align="center">
 <image src="https://img.shields.io/badge/Github-LiYangSir-brightgreen">
 <image src="https://img.shields.io/badge/author-teaUrn-green">

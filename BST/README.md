@@ -20,10 +20,12 @@
 
 &emsp;&emsp;树结构在我们生活中最常见的就是文件存储、家谱结构和公司职能分布等等都是采用的树这种结构。
 
+
 ### 1.1、什么是二叉树
 
 &emsp;&emsp;上面那种结构就是二叉树，一个节点连接着两个节点。具体的程序实现如下：
 ```java
+
 private class Node{  //内部类
     public E e;
     public  Node left, right;  //左右节点

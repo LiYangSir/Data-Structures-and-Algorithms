@@ -236,9 +236,6 @@ public class AVLTree<K extends Comparable<K>, V> {
         retNode.height = 1 + Math.max(getHeight(retNode.left), getHeight(retNode.right));
 
         int balanceFactor = getBalanceFactor(retNode);
-        if (Math.abs(balanceFactor) > 1)
-            System.out.println("unbalance : " + balanceFactor);
-
         // LL
         if (balanceFactor > 1 && getBalanceFactor(retNode.left) >= 0)
             return rightRotate(retNode);

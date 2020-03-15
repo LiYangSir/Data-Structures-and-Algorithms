@@ -452,7 +452,7 @@ private Node remove(Node node, E e) {
 
 ## 最后
 
-更多精彩内容，大家可以转到我的主页：[曲怪曲怪的主页](http://quguai.cn:8090/)
+更多精彩内容，大家可以转到我的主页：[曲怪曲怪的主页](http://quguai.cn/)
 
 或者关注我的微信公众号：**TeaUrn**
 

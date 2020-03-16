@@ -90,13 +90,12 @@ public class LoopQueue<E> implements Queue<E> {
                 res.append(", ");
         }
         // 迭代器型
-        /*
+
         for (int i = front; i != tail; i = (i + 1) % data.length) {
             res.append(data[i]);
             if (i != tail - 1)
                 res.append(", ");
         }
-        */
         res.append("]tail");
         return res.toString();
     }

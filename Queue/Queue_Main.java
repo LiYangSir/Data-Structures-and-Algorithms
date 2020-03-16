@@ -6,7 +6,7 @@ import java.util.Random;
  * @author LiYang
  * @date 2020/1/5
  **/
-public class Main {
+public class Queue_Main {
     private static double testQueue(Queue<Integer> q, int opCount) {
         long startTime = System.nanoTime();  // 纳秒
         Random random = new Random();

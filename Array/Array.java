@@ -12,6 +12,12 @@ public class Array<E> {
         size = 0;
     }
 
+    public Array(E[] arr) {
+        data = (E[]) new Object[arr.length];
+        System.arraycopy(arr, 0, data, 0, arr.length);
+        size = arr.length;
+    }
+
     public Array() {
         this(10);
     }
@@ -62,6 +68,18 @@ public class Array<E> {
         return data[index];
     }
 
+    E getLast() {
+        return get(size - 1);
+    }
+
+    public void swap(int i, int j) {
+        if (i < 0 || i >= size || j < 0 || j >= size)
+            throw new IllegalArgumentException("index is illegal");
+        E temp = data[i];
+        data[i] = data[j];
+        data[j] = temp;
+    }
+
     void set(int index, E e) {
         if (index < 0 || index >= size) {
             throw new IllegalArgumentException("get failed, Required index < 0 || index >= size");
@@ -94,6 +112,7 @@ public class Array<E> {
     public E removeLast() {
         return remove(size-1);
     }
+
 
     public void removeElement(E e){
         int index = find(e);

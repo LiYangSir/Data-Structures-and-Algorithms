@@ -117,6 +117,19 @@ public class LinkedList<E> {
         return retNode.e;
     }
 
+    public void removeElement(E e) {
+        table pre = dummyHead;
+        for (int i = 0; i < size; i++) {
+            if (pre.next.e == e) {
+                size--;
+                table retNode = pre.next;
+                pre.next = retNode.next;
+                retNode.next = null;
+                return;
+            }
+            pre = pre.next;
+        }
+    }
     public E removeFirst() {
         return remove(0);
     }

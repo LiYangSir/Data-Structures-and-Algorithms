@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * Time : 17:03
  * Version ： 1.0.0
  **/
-public class Main {
+public class Trie_Main {
     public static void main(String[] args){
         Trie trie = new Trie();
         String[] words = {"you","love","me","da","df","fd"};

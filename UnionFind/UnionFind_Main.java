@@ -6,7 +6,7 @@ import java.util.Random;
  * Time : 17:42
  * Version ： 1.0.0
  **/
-public class Main {
+public class UnionFind_Main {
     public static double test(UF uf, int m) {
         int size = uf.getSize();
         Random random = new Random();

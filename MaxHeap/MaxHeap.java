@@ -1,6 +1,3 @@
-import javafx.scene.Parent;
-
-import java.awt.image.Kernel;
 import java.util.Random;
 
 /**
@@ -17,7 +14,7 @@ public class MaxHeap<E extends Comparable<E>> {
     }
 
     public MaxHeap(E[] arr) {
-        data = new Array<>(arr);
+        data = new Array<E>(arr);
         for (int i = parent(arr.length - 1); i >= 0; i--)
             siftDown(i);
     }

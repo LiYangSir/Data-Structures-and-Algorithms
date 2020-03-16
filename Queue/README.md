@@ -178,7 +178,16 @@ public E getFront() {
 </div>
 
 **写在前面：** 我们不难注意到，**数组满**的时候正是head与tail相邻的时候，tail在前。为了维护循环性，我们表示为
-<p align=center><b>tail == (head + 1) % size</b></p>
+<p align=center><b>head == (tail + 1) % size</b></p>
+<div align=center>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/4.Queue%E9%98%9F%E5%88%97/%E9%98%9F%E5%88%97%E6%BB%A1.png width=90% alt=队列满>
+</div>
+
+队列**空**的时候也就是head和tail在一起的情况。
+<p align=center><b>head == tail</b></p>
+<div align=center>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/4.Queue%E9%98%9F%E5%88%97/%E9%98%9F%E5%88%97%E7%A9%BA.png width=90% alt=队列空>
+</div>
 
 ### 4.1、基本函数实现
 

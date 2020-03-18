@@ -3,11 +3,10 @@
  >数据结构与算法是一门计算机领域的必修课程，希望给学习的小伙伴提供源码的帮助
 
 <div align="center">
-<img src="https://img.shields.io/badge/Lannguage-Java-brightgreen">
-<img src="https://img.shields.io/badge/JDK-1.8-green">
-<img src="https://img.shields.io/badge/realease-v1.0-yellowgreen">
-<img src="https://img.shields.io/badge/last%20commit-yesterday-lightgrey">
-<img src="https://img.shields.io/badge/author-TeaUrn-blue">
+<image src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/label/Github-LiYangSir-brightgreen.svg">
+<image src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/label/quguai.cn-green.svg">
+<image src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/label/Language-Java-orange.svg">
+<image src="https://markdown-liyang.oss-cn-beijing.aliyuncs.com/label/Version-1.0-blue.svg">
 </div>
 
 ------
@@ -16,7 +15,7 @@
 
 &emsp;&emsp;数据结构与算法不仅强调的是数据结构，而且还强调算法。两者是相辅相成的结果，只有了解了数据结构才能写出更加优秀的算法，优秀的算法定要依靠更优化的数据结构。
 
-> [个人主页](http://teaurn.cn:8090) &emsp;|&emsp; [CSDN](https://me.csdn.net/qq_41503660) &emsp;|&emsp; [博客园](https://www.cnblogs.com/teaurn/)
+> [个人主页](http://quguai.cn) &emsp;|&emsp; [CSDN](https://me.csdn.net/qq_41503660) &emsp;|&emsp; [博客园](https://www.cnblogs.com/teaurn/)
 
 ### 开始使用
 
@@ -26,7 +25,7 @@
 
 ### 各数据结构详细内容链接
 
- + 动态数组 : [Array](Array)
+ + 动态数组 : [Array/README.md](Array)
 
  + 栈：[Stack/README.md](Stack)
 

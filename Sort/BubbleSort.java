@@ -24,8 +24,15 @@ public class BubbleSort {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {3, 9, -1, 10, -2};
+//        int[] arr = {3, 9, -1, 10, -2};
+        int[] arr = new int[80000];
+        for (int i = 0; i < 80000; i++) {
+            arr[i] = (int)(Math.random() * 800000000);
+        }
+        long startTime = System.nanoTime();
         bubbleSort(arr);
-        bubbleShow(arr);
+        /*bubbleShow(arr);*/
+        long endTime = System.nanoTime();
+        System.out.println("时间消耗：" + (endTime - startTime) / 1000000000.0);
     }
 }

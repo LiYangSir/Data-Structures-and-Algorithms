@@ -33,8 +33,9 @@ class Solution {
     }
 }
 ```
-&emsp;&emsp;可以发现最后运行的效率特别低，所以可以对此进行更改底层实现。在题目的下方标注着：**注意事项：您可以假定该字符串只包含小写字母。**
-所以说可以使用固定的数组来进行实现。数组大小为 26，数组索引的方式`char - 'a'`通过这样的方式来找到对应的字符。
+&emsp;&emsp;可以发现最后运行的效率特别低，所以可以对此进行更改底层实现。在题目的下方标注着：
+**注意事项：您可以假定该字符串只包含小写字母。**
+&emsp;&emsp;所以说可以使用固定的数组来进行实现。数组大小为 26，数组索引的方式`char - 'a'`通过这样的方式来找到对应的字符。
 **使用数组程序实现：**
 ```java
 class Solution {
@@ -74,7 +75,7 @@ class Solution {
 
 具体素数取什么，有人已经给出了结论。
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/hashFun.png width=40% alt=哈希函数模值的取值>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/hashFun.png width=22% alt=哈希函数模值的取值>
 </div>
 
 + lwr：数据大小的下界
@@ -87,7 +88,7 @@ class Solution {
 &emsp;&emsp;我们知道在我们的计算机当中，对于浮点数的存储也是采用二进制的形式，只不过计算机解析成了浮点数。下面以32位计算机为例。
 
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/floatSave.png width=80% alt=浮点数的存储>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/floatSave.png width=50% alt=浮点数的存储>
 </div>
 
 存储方式同整型相同，所以仍然可以将浮点数按照整型进行处理。
@@ -108,7 +109,7 @@ Java = J \times I^3 + a \times I^2 + v \times I^1 + a \times I^0
 $$
 &emsp;&emsp; I 表示进制，I的数值表示所代表类型的大小。对于字符串产生的这种大整型，我们可以按照2.1节那种，对大整型进行取模。
 $$
-hash(Java) = (J \times I^3 + a \times I^2 + v \times I^1 + a \times I^0)   \% M 
+hash(Java) = (J \times I^3 + a \times I^2 + v \times I^1 + a \times I^0) \% M 
 $$
 化简可得：
 $$
@@ -160,13 +161,13 @@ class Dog{
 &emsp;&emsp;根据前面讲解的哈希表的哈希函数，需要对大整型进行取模的操作，其实最后的存储的数据大小就是模值。存储的方式就是采用和动态数组类似的方式，底层采用数组的方式存储。
 
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/Save.png width=15% alt=底层数组存储>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/Save.png width=8% alt=底层数组存储>
 </div>
 
 具体存储到哪个索引的位置就要根据我们的哈希函数设计了。
 
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/save-add.png width=30% alt=>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/save-add.png width=18% alt=>
 </div>
 <br/>
 <p align=center><b>index = ( hashCode(s1) & 0x7fffffff ) % M</b></p>
@@ -174,17 +175,17 @@ class Dog{
 &emsp;&emsp;在前面中说到 Java 中的 hasCode 可以返回负值，但是数组索引没有负值，所以需要将最前面的符号位设置为零。
 **添加两个元素后：**
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/save-two.png width=24% alt=添加两个元素>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/save-two.png width=15% alt=添加两个元素>
 </div>
 
 &emsp;&emsp;当添加第三个元素（s3）的时候，假设获得的索引依然是 2 。这样就产生了**哈希冲突**。那么我们就需要将新添加的元素 s3 放到 s1 后面，类似于链表的形式。
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/save-three.png width=33% alt=哈希冲突>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/save-three.png width=20% alt=哈希冲突>
 </div>
 
 &emsp;&emsp;当然前面的形式我们采用链表的形式，其实对于每一个索引位置我们可以索引一个树结构，也就降低了时间复杂度。类似于下面的形式。
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/HashMAP.png width=31% alt=TreeMap>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/HashMAP.png width=20% alt=TreeMap>
 </div>
 
 &emsp;&emsp;实际上**HashMap 的底层就是 TreeMap 数组；HashSet 的底层就是 TreeSet 数组；**。
@@ -364,7 +365,7 @@ if (size < lowerTol * M && capacityIndex >= 1)
 **再分析发生扩容的情况：**
 &emsp;&emsp;当我们进行resize操作以后，我们可以发现，oldM 和 newM 之间大约有两倍的关系。
 <div align=center>
-<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/hashFun2.png width=50% alt=精简版>
+<img src=https://markdown-liyang.oss-cn-beijing.aliyuncs.com/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/11-HashTable/hashFun2.png width=30% alt=精简版>
 </div>
 
 &emsp;&emsp;对于原本元素个数为 upperTol * oldM = N 的元素增加到 upperTol * newM = 2 * N，才触发一次resize操作，相当于进行了翻倍操作。resize的时间复杂度为O(N)级别的，但是需要增加N个元素才触发一次resize操作，所以根据均摊时间复杂度，增删两种操作的时间复杂度为O(2)级别的复杂度，改查操作的时间复杂度为O(1)级别。

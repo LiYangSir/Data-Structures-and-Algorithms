@@ -68,7 +68,7 @@ public class RBTree<K extends Comparable<K>, V extends Comparable<V>>{
     private void flipColors(Node node) {
         node.color = RED;
         node.left.color = BLACK;
-        node.right.color = RED;
+        node.right.color = BLACK;
     }
 
     private Node rightRotate(Node node) {

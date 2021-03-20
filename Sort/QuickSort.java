@@ -29,8 +29,6 @@ public class QuickSort {
         sort(a, lo, partition - 1);
         //右子组有序
         sort(a, partition + 1, hi);
-
-
     }
 
     public static int partition(Comparable[] a, int lo, int hi) {
@@ -57,15 +55,15 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        Integer[] arr = new Integer[8000000];
-        for (int i = 0; i < 8000000; i++) {
-            arr[i] = (int)(Math.random() * 800000000);
-        }
-        long startTime = System.nanoTime();
-        sort(arr);
-        /*bubbleShow(arr);*/
-        long endTime = System.nanoTime();
-        System.out.println("时间消耗：" + (endTime - startTime) / 1000000000.0);
+//        Integer[] arr = new Integer[8000000];
+//        for (int i = 0; i < 8000000; i++) {
+//            arr[i] = (int)(Math.random() * 800000000);
+//        }
+//        long startTime = System.nanoTime();
+//        sort(arr);
+//        /*bubbleShow(arr);*/
+//        long endTime = System.nanoTime();
+//        System.out.println("时间消耗：" + (endTime - startTime) / 1000000000.0);
 
         Integer[] a = {6, 5, 6, 8, 9, 1};
         sort(a);
